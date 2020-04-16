@@ -1,0 +1,54 @@
+
+<div class="card ctm-border-radius shadow-sm grow">
+        <div class="card-header">
+            <h4 class="card-title mb-0">Employee Sign-Up</h4>
+        </div>
+        <div class="card-body">
+            <form [formGroup]="registerForm">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label>
+                            Employee ID
+                            <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" class="form-control employee_id" formControlName="emp_id">
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                            <div class="form-group">
+                                <label>
+                                        Employee Email
+                                <span class="text-danger">*</span>
+                                </label>
+                                <input type="email" class="form-control employee_id" formControlName="emp_email">
+                            </div>
+                    </div>
+                    <div class="col-sm-12">
+                            <div class="form-group">
+                                <label>
+                                Employee Name
+                                <span class="text-danger">*</span>
+                                </label>
+                                <input type="text" class="form-control employee_id" formControlName="emp_name">
+                            </div>
+                    </div>
+                    <div class="col-sm-12 leave-col">
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" class="form-control" formControlName="emp_password">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 leave-col">
+                            <div class="form-group">
+                                <label>Confirm Password</label>
+                                <input type="password" class="form-control" formControlName="emp_cpassword">
+                            </div>
+                        </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary btn-md" (click)="onRegister()">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
